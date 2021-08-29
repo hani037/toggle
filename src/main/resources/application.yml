@@ -1,0 +1,26 @@
+spring:
+  main:
+    banner-mode: "off"
+
+
+
+  jpa:
+
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+  datasource:
+    url: jdbc:mysql://bnhzckpttjipo66srphl-mysql.services.clever-cloud.com:3306/bnhzckpttjipo66srphl?useSSL=false
+    username: u85otkhijw5t5tcm
+    password: KwN7u4hdMwcquNUWoGWg
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat:
+      max-wait: 10000
+      # Maximum number of active connections that can be allocated from this pool at the same time.
+      max-active: 4
+      # Validate the connection before borrowing it from the pool.
+      test-on-borrow: true
+
